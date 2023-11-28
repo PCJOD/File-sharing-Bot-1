@@ -94,8 +94,8 @@ async def start_command(client: Client, message: Message):
         
                 ]
             ]
-        )
-        btn.insert(0, [InlineKeyboardButton("🔰 Movie Group 🔰", url="https://t.me/pcmoviegroup")])
+        
+        [InlineKeyboardButton("🔰 Movie Group 🔰", url="https://t.me/pcmoviegroup")])
         await message.reply_text(
             text = START_MSG.format(
                 first = message.from_user.first_name,
