@@ -89,7 +89,9 @@ async def start_command(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton("🔰𝐀𝐛𝐨𝐮𝐭 𝐌𝐞🔰", callback_data = "about"),
-                    InlineKeyboardButton("❌𝐂𝐥𝐨𝐬𝐞❌", callback_data = "close")
+                    InlineKeyboardButton("❌𝐂𝐥𝐨𝐬𝐞❌", callback_data = "close"),
+                    btn.insert(0, [InlineKeyboardButton("🔰 Movie Group 🔰", url="https://t.me/pcmoviegroup")])
+        
                 ]
             ]
         )
