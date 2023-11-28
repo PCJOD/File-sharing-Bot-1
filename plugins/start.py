@@ -93,6 +93,11 @@ async def start_command(client: Client, message: Message):
                 ]
             ]
         )
+
+        ([[
+                
+                InlineKeyboardButton("💞 𝚂ᴏᴜʀᴄᴇ 𝙲ᴏᴅᴇ 💞", url="https://t.me/pc_bot_updates")
+        ]])
         await message.reply_text(
             text = START_MSG.format(
                 first = message.from_user.first_name,
