@@ -1,4 +1,4 @@
-#(©)CodeXBotz
+#PC BOTZ
 
 
 
@@ -88,14 +88,11 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔰𝐀𝐛𝐨𝐮𝐭 𝐌𝐞🔰", callback_data = "about"),
-                    InlineKeyboardButton("❌𝐂𝐥𝐨𝐬𝐞❌", callback_data = "close"),
-                
-        
+                    InlineKeyboardButton("❤️‍🔥 𝐀𝐛𝐨𝐮𝐭 𝐌𝐞 ❤️‍🔥", callback_data = "about"),
+                    InlineKeyboardButton("🔰 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🔰", url= "https://t.me/pcmoviegroup")
                 ]
             ]
-        
-        [InlineKeyboardButton("🔰 Movie Group 🔰", url="https://t.me/pcmoviegroup")])
+        )
         await message.reply_text(
             text = START_MSG.format(
                 first = message.from_user.first_name,
